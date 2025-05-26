@@ -17,6 +17,6 @@ def pregunta_09():
     """
     import pandas as pd
     tbl0 = pd.read_csv("files/input/tbl0.tsv", sep="\t")
-    tbl0["year"] = pd.to_datetime(tbl0["c3"], errors="coerce").dt.year.astype("Int64")
+    tbl0["year"] = pd.to_datetime(tbl0["c3"], errors="coerce").dt.year.astype(str)
     return tbl0
 print(pregunta_09())
